@@ -8,9 +8,11 @@ import random
 
 def main():
   #Create a list of your responses.
-  print("What should I make for dinner tonight?")
+  print("Magic 8 Ball Assignment")
   #Prompt the user for their question.
-  answers = ["Italian Food","Mexican Food","Thai Food","American Food","Go Out to Eat"]
+  Question = input("Ask me anything...")
+  answers = ["Heck no!","For sure!","Try a little harder!","Keep it positive",
+             "You've got this!","Absolutely"]
   #Answer question randomly with one of the options from your earlier list.
   length = len(answers)
   r = random.random() * length
