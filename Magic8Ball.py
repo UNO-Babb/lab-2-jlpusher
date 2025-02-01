@@ -12,7 +12,7 @@ def main():
   #Prompt the user for their question.
   Question = input("Ask me anything...")
   answers = ["Heck no!","For sure!","Try a little harder!","Keep it positive",
-             "You've got this!","Absolutely"]
+             "You've got this!","Absolutely","I guess so"]
   #Answer question randomly with one of the options from your earlier list.
   length = len(answers)
   r = random.random() * length
