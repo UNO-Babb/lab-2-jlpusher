@@ -12,8 +12,7 @@ def main():
   currentHour = (now.hour - 6) % 24
   currentMinute = now.minute
 
-  print ("This is the current time:")
-  print (currentHour, ":", currentMinute) #this is just for checking, we should delete it later
+  print ("The current time is ", currentHour, ":", currentMinute, ".") 
 
   #TODO:
   #Ask user for hours
@@ -42,7 +41,10 @@ def main():
 
   #Output the future time in standard format "HH:MM"
 
-  print("In ", UserHours, "hours and ", UserMinutes, "minutes, it will be, ", FutHour, ":", FutMinutes)
+  FutHourFormat = (str(FutHour).zfill(2))
+  FutMinFormat = (str(FutMinutes).zfill(2))
+  
+  print("In ", UserHours, "hours and ", UserMinutes, "minutes, it will be, ", FutHourFormat, ":", FutMinFormat, ".")
 
 
 if __name__ == '__main__':
